@@ -276,6 +276,274 @@ a {
   }
 }
 
+.page-header .header-bottom {
+  background-color: white;
+  border-bottom-color: #f4f5f6;
+}
+
+.header-bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .header-bottom {
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
+    box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
+    -moz-transform: translate(100%, 0%);
+    -ms-transform: translate(100%, 0%);
+    -webkit-transform: translate(100%, 0%);
+    transform: translate(100%, 0%);
+    filter: alpha(opacity=0);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-header .header-bottom {
+    padding-right: 160px;
+    display: block;
+    position: relative;
+  }
+}
+
+.page-header ul.page-nav {
+  color: black;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+ul.page-nav a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.page-header ul.page-nav a:hover {
+  color: #f72210;
+}
+
+@media screen and (max-width: 991px) {
+  .page-header ul.page-nav {
+    padding-top: 10px;
+  }
+
+  .page-header ul.page-nav a::after {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+
+  .page-header ul.page-nav a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .page-header ul.page-nav a:hover::after {
+    background-color: #f72210;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  ul.page-nav li {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    text-align: center;
+    border-left-width: 1px;
+    border-left-style: solid;
+  }
+
+  .page-header ul.page-nav li {
+    border-left-color: #d9d9d9;
+  }
+
+  ul.page-nav {
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  ul.page-nav li:first-child {
+    border-left-width: 0;
+  }
+
+  .page-header .header-bottom::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: block;
+    width: 78px;
+    background-color: #f72210;
+    border-left: 12px solid white;
+    border-top: 13px solid #f72210;
+  }
+}
+
+.search-block input {
+  top: 0;
+  font-size: 16px;
+  height: 20px;
+  width: 175px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-block .search-icon {
+  background: url(https://g.newsweek.com/www/images/icon-search-glass.svg) center/contain no-repeat white;
+  width: 20px;
+  height: 20px;
+  clip: auto;
+  font-size: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .search-block {
+    position: relative;
+    padding-right: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .search-block input[type="text"] {
+    width: 60px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    right: 102px;
+    vertical-align: middle;
+  }
+
+  .search-block .search-icon {
+    top: 18px;
+    right: 82px;
+  }
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.not-logged-in header.fixed {
+  z-index: 10001;
+}
+
+/* experiment puposes only */
+
+.page-header.fixed .header-top .column-1 {
+  display: none;
+}
+
+.page-header.fixed .header-top .column-2 {
+  position: absolute;
+  top: 12px;
+  right: 80px;
+}
+
+@media screen and (max-width: 480px) {
+  .page-header.fixed .header-top .column-2 {
+    right: 50px;
+  }
+}
+
+.page-header.fixed .container {
+  max-width: inherit;
+}
+
+.page-header.fixed .brand svg {
+  width: 132px;
+  height: 20px;
+  margin: 0 auto 0 0;
+}
+
+.page-header.fixed .header-top {
+  height: auto;
+  padding: inherit;
+}
+
+.page-header.fixed .header-middle {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  position: relative;
+  left: inherit;
+  z-index: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.page-header.fixed .search-block {
+  position: relative;
+  padding-right: 20px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.page-header.fixed .search-block input[type="text"] {
+  font-size: 16px;
+  height: 20px;
+  width: 100%;
+  position: static;
+}
+
+.page-header.fixed .search-block .search-icon {
+  top: 0;
+  right: 0;
+}
+
+.page-header.fixed .header-bottom {
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) -2px 0 2px;
+  position: absolute;
+  right: 0;
+  height: calc(100vh - 50px);
+  padding: 10px 0;
+  width: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.page-header.fixed .header-bottom::before {
+  content: none;
+}
+
+/* main content */
+.main {
+  background-color: white;
+  padding-top: 20px;
+}
+
 /* bootstrap fix classes */
 .align-end {
   align-items: flex-end;
@@ -295,6 +563,10 @@ a {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .no-padding {
