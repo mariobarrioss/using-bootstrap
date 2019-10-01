@@ -26,6 +26,36 @@ body {
     font-size: 15px;
     line-height: 20px;
   }
+
+  h1 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 33px;
+    line-height: 33px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 a {
@@ -544,33 +574,63 @@ header.fixed {
   padding-top: 20px;
 }
 
+.colwrap {
+  background: white;
+}
+
+.column3 {
+  height: 2500px;
+  background: #708090;
+}
+
+.col1 {
+}
+
+.col2 {
+  height: 400px;
+  background: #c0c0c0;
+}
+
+/* Featured stories section */
+
+.block-title {
+  color: rgba(3, 3, 3, 0.4);
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  padding-bottom: 11px;
+  text-transform: uppercase;
+}
+
+.wrap {
+  position: relative;
+  min-height: 33px;
+}
+
+.article-category {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.9);
+  font: bold 17px/16px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 8px 15px 9px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.article-title {
+  padding: 20px 0;
+}
+
+.article-title h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 10px;
+  color: black;
+}
+
 /* bootstrap fix classes */
-.align-end {
-  align-items: flex-end;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.align-base {
-  align-items: baseline;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-center {
-  justify-content: center;
-}
 
 .no-padding {
   padding: 0;
 }
 
-/* end of alignment classes */
+/* end of bootstrap fixes */
