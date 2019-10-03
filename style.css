@@ -918,6 +918,43 @@ header.fixed {
   font: bold 15px/15px "Roboto Condensed", sans-serif;
 }
 
+/* page bottom section */
+
+.page-bottom {
+  margin-top: 20px;
+}
+
+/* magazine section */
+
+.magazine {
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.magazine-link {
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  display: block;
+  background-color: #f4f5f6;
+  color: black;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 10px 10px 10px 12px;
+  text-transform: uppercase;
+}
+
+.magazine-link::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  background: url(https://g.newsweek.com/www/images/icon-arrow-right-black.svg) center/contain no-repeat;
+}
+
+.magazine-link:hover {
+  background-color: #dbdcdd;
+}
+
 /* bootstrap fix classes */
 
 .no-padding {
