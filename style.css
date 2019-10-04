@@ -920,10 +920,6 @@ header.fixed {
 
 /* page bottom section */
 
-.page-bottom {
-  margin-top: 20px;
-}
-
 /* magazine section */
 
 .magazine {
@@ -955,10 +951,91 @@ header.fixed {
   background-color: #dbdcdd;
 }
 
+.magazine article .category {
+  font: bold 16px/26px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.magazine article .category span {
+  display: inline-block;
+}
+
+.magazine article .category span:first-of-type {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+}
+
+.magazine-title {
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.magazine .bottom {
+  padding-top: 30px;
+}
+
+.magazine .col-md-4,
+.magazine .col-md-3 {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .magazine-image img {
+    max-height: 290px;
+    min-height: 220px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .magazine-title {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .magazine .newsletter-title {
+    border-bottom: 1px solid#d9d9d9;
+    padding-bottom: 8px;
+  }
+
+  .magazine-image img {
+    max-height: 290px;
+    min-height: 162px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  .magazine-image img {
+    min-height: 290px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .magazine-image img {
+    max-height: 492px;
+    min-height: 194px;
+  }
+}
+
+
 /* bootstrap fix classes */
 
 .no-padding {
   padding: 0;
+}
+
+.img-fix {
+  object-fit: cover;
 }
 
 /* end of bootstrap fixes */
