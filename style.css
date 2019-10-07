@@ -981,19 +981,6 @@ header.fixed {
   padding-top: 30px;
 }
 
-.magazine .col-md-4,
-.magazine .col-md-3 {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 1024px) {
-  .magazine-image img {
-    max-height: 290px;
-    min-height: 220px;
-    object-fit: cover;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .magazine-title {
     margin-bottom: 0;
@@ -1006,27 +993,25 @@ header.fixed {
     padding-bottom: 8px;
   }
 
-  .magazine-image img {
-    max-height: 290px;
-    min-height: 162px;
-    object-fit: cover;
+  .magazine .col-md-4 picture,
+  .magazine .col-md-3 picture {
+    display: block;
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+  }
+
+  .magazine .col-md-4 picture img,
+  .magazine .col-md-3 picture img {
+    transform: translate(-50%, 0%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    max-width: inherit;
   }
 }
-
-@media screen and (min-width: 1310px) {
-  .magazine-image img {
-    min-height: 290px;
-    object-fit: cover;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .magazine-image img {
-    max-height: 492px;
-    min-height: 194px;
-  }
-}
-
 
 /* bootstrap fix classes */
 
