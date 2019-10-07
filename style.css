@@ -981,6 +981,32 @@ header.fixed {
   padding-top: 30px;
 }
 
+.magazine .wrap .category {
+  margin: 0;
+}
+
+.magazine .big-shots-wrapper .magazine-title {
+  margin-top: 10px;
+}
+
+.big-shots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .magazine .newsletter-title {
+    margin-top: 30px;
+  }
+
+  .magazine-title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .magazine-title {
     margin-bottom: 0;
@@ -993,16 +1019,16 @@ header.fixed {
     padding-bottom: 8px;
   }
 
-  .magazine .col-md-4 picture,
-  .magazine .col-md-3 picture {
+  .magazine .col-md-4 .image-block,
+  .magazine .col-md-3 .image-block {
     display: block;
     position: relative;
     padding-bottom: 100%;
     overflow: hidden;
   }
 
-  .magazine .col-md-4 picture img,
-  .magazine .col-md-3 picture img {
+  .magazine .col-md-4 .image-block img,
+  .magazine .col-md-3 .image-block img {
     transform: translate(-50%, 0%);
     position: absolute;
     top: 0;
@@ -1010,6 +1036,10 @@ header.fixed {
     width: auto;
     height: 100%;
     max-width: inherit;
+  }
+
+  .big-shots-wrapper .wrap .magazine-image .image-block {
+    padding-bottom: 110%;
   }
 }
 
