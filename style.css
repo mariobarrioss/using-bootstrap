@@ -44,6 +44,10 @@ a:hover {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 15px;
@@ -1334,7 +1338,7 @@ header.fixed {
   font-size: 26px;
   text-align: center;
   display: block;
-  font-family: "Genericons";
+  font-family: "Genericons", serif;
   cursor: pointer;
   line-height: 24px;
 }
@@ -1442,5 +1446,3 @@ header.fixed {
 .no-padding {
   padding: 0;
 }
-
-/* end of bootstrap fixes */
