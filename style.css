@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Genericons";
+  src: url("https://g.newsweek.com/www/fonts/Genericons.eot?#iefix") format("embedded-opentype"), url("https://g.newsweek.com/www/fonts/Genericons.woff") format("woff"), url("https://g.newsweek.com/www/fonts/Genericons.ttf") format("truetype"), url("https://g.newsweek.com/www/fonts/Genericons.svg#Genericons") format("svg");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -589,15 +597,6 @@ header.fixed {
   background: white;
 }
 
-.column3 {
-}
-
-.col1 {
-}
-
-.col2 {
-}
-
 /* Featured stories section */
 
 .featured article {
@@ -993,7 +992,6 @@ header.fixed {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -1288,11 +1286,154 @@ header.fixed {
   background: rgba(0, 0, 0, 0) url("Images/newsletter-promo-home-page.png") no-repeat scroll center center / cover;
 }
 
-/* bootstrap fix classes */
+/* page footer section */
 
-.flex-1 {
-  flex: 1;
+.page-footer {
+  border-top: 2px solid #f4f5f6;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
+.page-footer .footer-links .leaf a:hover {
+  color: black;
+}
+
+.page-footer .brand .svg-logo {
+  display: block;
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  fill: #f72210;
+}
+
+.page-footer .copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.page-footer .social {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.page-footer .social li {
+  margin-left: 10px;
+}
+
+.page-footer .social li:first-child {
+  margin-left: 0;
+}
+
+.page-footer .social .social-genericon {
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  font-family: "Genericons";
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.facebook::before {
+  content: "\f203";
+}
+
+.page-footer .social .facebook:hover {
+  color: #3b5998;
+}
+
+.page-footer .social .twitter {
+  font-size: 25px;
+}
+
+.twitter::before {
+  content: "\f202";
+}
+
+.page-footer .social .twitter:hover {
+  color: #1da1f2;
+}
+
+.page-footer .social .instagram {
+  font-size: 23px;
+}
+
+.instagram::before {
+  content: "\f215";
+}
+
+.page-footer .social .instagram:hover {
+  color: #405de6;
+}
+
+.page-footer .social .tumblr {
+  font-size: 20px;
+}
+
+.tumblr::before {
+  content: "\f214";
+}
+
+.page-footer .social .tumblr:hover {
+  color: #35465c;
+}
+
+.page-footer .social .linkedin {
+  font-size: 25px;
+}
+
+.linkedin::before {
+  content: "\f207";
+}
+
+.page-footer .social .linkedin:hover {
+  color: #0077b5;
+}
+
+/* footer links section */
+
+.page-footer .footer-links {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+}
+
+.page-footer .editions-label {
+  margin-top: 6px;
+  margin-right: 15px;
+}
+
+.page-footer .footer-links li.leaf {
+  display: inline-block;
+  padding-right: 20px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer .footer-links li.leaf {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+
+  .page-footer .footer-links .footer-links-edition .last,
+  .page-footer .footer-links .footer-links-menu .consent {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+/* bootstrap fix classes */
 
 .flex-none {
   flex: none;
@@ -1300,10 +1441,6 @@ header.fixed {
 
 .no-padding {
   padding: 0;
-}
-
-.img-fix {
-  object-fit: cover;
 }
 
 /* end of bootstrap fixes */
