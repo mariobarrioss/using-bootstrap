@@ -1164,7 +1164,139 @@ header.fixed {
   right: -15px;
 }
 
+.subscribe-block .block-title {
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+  color: #f72210;
+}
+
+.subscribe-block .col-xl-4,
+.subscribe-block .col-xl-8 {
+  margin-bottom: 40px;
+}
+
+.subscribe-block .left-column {
+  background-color: #f4f5f6;
+  padding: 24px 20px 20px;
+}
+
+.subscribe-block .right-column .info {
+  border: 1px solid #ebebeb;
+  padding: 20px;
+}
+
+.subscribe-block .left-column .image {
+  position: relative;
+  padding-bottom: 13px;
+  padding-right: 90px;
+}
+
+.subscribe-block .mag-thumb {
+  width: 170px;
+  height: 228px;
+}
+
+.subscribe-block .mag-thumb.current {
+  position: absolute;
+  top: 13px;
+  left: 80px;
+}
+
+.subscribe-block .subscribe-title {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: black;
+  position: relative;
+  display: block;
+}
+
+.subscribe-block p {
+  font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 25px;
+}
+
+.subscribe-block .subscribe-link {
+  background-color: #f72210;
+  display: inline-block;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  color: white;
+  margin-bottom: 0;
+  padding: 10px 10px 10px 12px;
+  text-transform: uppercase;
+}
+
+.subscribe-block .subscribe-link::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  background: url(https://g.newsweek.com/www/images/icon-arrow-right.svg) center/contain no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-block .left-column .info {
+    padding-left: 30px;
+  }
+
+  .subscribe-block .right-column .image {
+    width: 48%;
+    max-width: 191px;
+  }
+
+  .subscribe-block .right-column .info {
+    border-left-width: 0;
+  }
+
+  .subscribe-block .left-column,
+  .subscribe-block .right-column .info {
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .subscribe-block::before {
+    left: -30px;
+    right: -30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe-block .left-column .image {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .subscribe-block .right-column .image {
+    height: 160px;
+  }
+
+  .subscribe-block .left-column,
+  .subscribe-block .right-column {
+    text-align: center;
+  }
+
+  .subscribe-block .subscribe-title {
+    font-size: 20px;
+  }
+}
+
+.right-image {
+  background: rgba(0, 0, 0, 0) url("Images/newsletter-promo-home-page.png") no-repeat scroll center center / cover;
+}
+
 /* bootstrap fix classes */
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-none {
+  flex: none;
+}
 
 .no-padding {
   padding: 0;
